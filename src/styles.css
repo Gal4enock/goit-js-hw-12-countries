@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-image: url(https://kupidonia.ru/content/puzzle/photo/big/434_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+  font-size: 26px;
+}
+button {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  padding: 6px 22px;
+  min-width: 73px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 26px;
+  color: darkblue;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 50px;
+  opacity: 0.7;
+  box-shadow: 2px 2px 15px white;
+}
+input {
+  display: block;
+  min-width: 472px;
+  text-align: center;
+  color: darkblue;
+  font-size: 26px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  opacity: 0.7;
+  box-shadow: 2px 2px 15px white;
+}
+.qwery {
+  padding-left: 400px;
+  padding-top: 100px;
+}
