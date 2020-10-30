@@ -28,13 +28,17 @@ const getACountry = function () {
   }
   let url = `https://restcountries.eu/rest/v2/name/${word}`;
   fetch(url)
-    .then(resp => resp.json())
+    .then(res => {
+      if (res.status >= 200 && res.status < 300) {
+        return res.json()
+      } else alert('Вы ввели неверное название!')
+    })
+    // .then(resp => resp.json())
     .then(arr => {
       if (arr.length > 10) {
         alert('Too many mathes found. Please enter more specific query!')
       } 
       else if (arr.length > 1 && arr.length <= 10) {
-        console.log(arr);
         arr.map((el) => refs.list.insertAdjacentHTML('beforeend', `<li> ${el.name}</li>`))
       }
       else if (arr.length === 1) {
@@ -42,4 +46,5 @@ const getACountry = function () {
         refs.list.innerHTML = pars(obj)
       }
     })
+   
 }
