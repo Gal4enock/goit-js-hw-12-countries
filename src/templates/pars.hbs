@@ -1,15 +1,15 @@
-<h2> {{name}}</h2>
+<h2 class="title">{{name}}</h2>
 <div class="country-box">
-  <div class=" text">
-    <p>Capital: {{capital}}</p>
-    <p>Population: {{population}}</p>
-    <p>Languages:
+  <div class="text">
+    <p> <span class="word">Capital:</span> {{capital}}</p>
+    <p><span class="word">Population:</span> {{population}}</p>
+    <p><span class="word">Languages:</span>
     <ul>
-      {{#each Languages}}
-      <li class="lang-item">{{this}}</li>
+      {{#each languages}}
+      <li class="lang-item">{{this.name}}</li>
       {{/each}}
     </ul>
     </p>
   </div>
-  <div class="picture">{{flag}}</div>
+  <div class="picture"><img width="400" src="{{flag}}" alt=":)"></div>
 </div>
