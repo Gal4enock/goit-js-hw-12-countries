@@ -48,7 +48,6 @@ input {
 }
 .country-box {
   display: flex;
-  margin-left: 300px;
 }
 .text,
 .picture {
@@ -57,7 +56,7 @@ input {
 }
 .title {
   display: block;
-  margin-left: 450px;
+  margin-left: 150px;
 }
 .word {
   font-weight: 900;
